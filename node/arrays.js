@@ -16,14 +16,36 @@ array[1] = 'hello';
 
 // use forEach
 
+array.forEach((n) => {console.log(n) });
+
+const arrayTest = [2,5,8];
+
+arrayTest[5] = 9;
+
+arrayTest.forEach((n) => {console.log(n) });
+
 // use map
+
+const newArray = arrayTest.map(i => i+1);
 
 // use pop
 
+newArray.pop();
+console.log(newArray);
+
 // use push
+
+newArray.push(6);
+console.log(newArray);
 
 // use shift
 
+newArray.shift();
+console.log(newArray);
+
 // use unshift
+newArray.unshift(13);
+console.log(newArray);
+
 
 // use filter
